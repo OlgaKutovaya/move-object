@@ -1,0 +1,39 @@
+body {
+    height: 90vh;
+}
+h1 {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0d410b;
+    animation-name: changeColor;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#circle {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 #424140;
+    background-image: linear-gradient(red, orange, yellow,
+    green, cornflowerblue, darkblue, blueviolet);
+}
+#circle:hover {
+    cursor: pointer;
+}
+@keyframes changeColor {
+    0% {
+        color: #d80000;
+    } 25% {
+          color: #00b200;
+      } 50% {
+            color: #d35501;
+        } 100% {
+              color: #0000d4;
+          }
+}
